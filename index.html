@@ -26,7 +26,13 @@
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<meta name="msapplication-TileImage" content="/favicon-144.png">
 	<meta name="msapplication-config" content="/browserconfig.xml">
-	<!-- ****** faviconit.com favicons ****** -->
+    <!-- ****** faviconit.com favicons ****** -->
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#footer").load("footer.html"); 
+    });
+    </script> 
   </head>
   <body>
   <section class="section">
@@ -37,13 +43,7 @@
       </p>
     </div>
   </section>
+  <div id="footer"></div>
   </body>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Podio Studios</strong> by <a href="https://github.com/Putter173">Putter T.</a>. This website is created with
-        <a href="http://opensource.org/licenses/mit-license.php">Bluma</a>.
-      </p>
-    </div>
-  </footer>
+  
 </html>
