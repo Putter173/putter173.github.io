@@ -9,3 +9,9 @@
         max-width: 100%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .Title {
+        font-size: 1.55rem;
+    }
+}
