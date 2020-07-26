@@ -36,23 +36,9 @@
             $("#footer").load("footer.html"); */
         });
     </script>
-    <script type="text/javascript">
-        document.getElementById("nav-toggle").addEventListener("click", toggleNav);
-
-        function toggleNav() {
-            var nav = document.getElementById("nav-menu");
-            var className = nav.getAttribute("class");
-            if (className == "nav-right nav-menu") {
-                nav.className = "nav-right nav-menu is-active";
-            } else {
-                nav.className = "nav-right nav-menu";
-            }
-        }
-    </script>
 </head>
 
 <body>
-    <div id="header"></div>
     <section class="hero is-success is-fullheight-with-navbar">
         <div class="hero-body has-background-white">
             <div class="container has-text-centered">
@@ -63,7 +49,6 @@
             </div>
         </div>
     </section>
-    <div id="footer"></div>
 </body>
 
 </html>
