@@ -4,6 +4,10 @@
     height: auto;
 }
 
+.Footer {
+    padding-bottom: 3rem;
+}
+
 @media only screen and (max-width: 600px) {
     .Logo {
         max-width: 100%;
@@ -13,6 +17,9 @@
 @media only screen and (max-width: 768px) {
     .Title {
         font-size: 1.55rem;
+    }
+    .navbar-brand {
+        padding: 0 !important;
     }
 }
 
