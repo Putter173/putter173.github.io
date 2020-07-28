@@ -9,7 +9,7 @@
 }
 
 .Banner {
-    height: 20vw;
+    height: 25vw;
     background-color: #121212;
 }
 
@@ -17,6 +17,47 @@
     max-width: 50%;
     width: auto;
     height: auto;
+}
+
+.Box {
+    border-radius: 50px;
+    background: #efeeee;
+    box-shadow: 10px 10px 20px #bababa, -10px -10px 20px #ffffff;
+    object-fit: scale-down;
+}
+
+.overlay {
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.overlay:hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #efeeee;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #d7d6d6, #ffffff);
+    box-shadow: 10px 10px 20px #bababa, -10px -10px 20px #ffffff;
+    opacity: .5;
+}
+
+.columns {
+    margin: 1vw;
 }
 
 @media only screen and (max-width: 600px) {
