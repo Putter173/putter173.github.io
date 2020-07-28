@@ -1,33 +1,32 @@
-.Logo {
-    max-width: 50%;
-    width: auto;
-    height: auto;
+.HeaderTitle {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 1.5rem;
 }
 
 .Footer {
     padding-bottom: 3rem;
 }
 
+.MainImage {
+    max-width: 50%;
+    width: auto;
+    height: auto;
+}
+
 @media only screen and (max-width: 600px) {
-    .Logo {
+    .MainImage {
         max-width: 100%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .Title {
-        font-size: 1.55rem;
-    }
     .navbar-brand {
         padding: 0 !important;
     }
 }
 
 @media only screen and (min-width: 2560px) {
-    .Logo {
+    .MainImage {
         max-width: 100%;
-    }
-    .Title {
-        font-size: 6rem;
     }
 }
