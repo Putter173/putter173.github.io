@@ -1,10 +1,16 @@
 .HeaderTitle {
     font-family: "Arial Rounded MT Bold";
     font-size: 1.5rem;
+    color: #121212;
 }
 
 .Footer {
     padding-bottom: 3rem;
+}
+
+.Banner {
+    height: 20vw;
+    background-color: #121212;
 }
 
 .MainImage {
@@ -17,9 +23,15 @@
     .MainImage {
         max-width: 100%;
     }
+    .Banner {
+        height: 50vw;
+    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
+    .NavItem {
+        width: 100vw;
+    }
     .navbar-brand {
         padding: 0 !important;
     }
