@@ -4,6 +4,19 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script>
+        $(document).ready(function() {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function() {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -13,7 +26,7 @@
                 <h1 class="HeaderTitle">Putter V.</h1>
             </a>
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -21,20 +34,16 @@
         </div>
 
         <div id="navbarBasicExample" class="navbar-menu" style="padding-right: 80px;">
-            <div class="navbar-end">
-
+            <div class="navbar-end" id="navMenu">
                 <a class="navbar-item" href="projects.html">
-                    Projects
-                  </a>
-
+                Projects
+              </a>
                 <a class="navbar-item" href="about.html">
-                    About
-                  </a>
-
+                About
+              </a>
                 <a class="navbar-item" href="contact.html">
-                    Contact
-                  </a>
-
+                Contact
+              </a>
             </div>
 
         </div>
